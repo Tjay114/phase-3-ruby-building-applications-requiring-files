@@ -1,5 +1,6 @@
 # Something is missing here
-
+require 'pry'
+require_relative '../lib/plant.rb'
 class Garden
   attr_accessor :name
 
@@ -23,3 +24,5 @@ cucumber = Plant.new(name: 'Cucumber')
 cucumber.garden = lawn
 
 p lawn.plants
+
+binding.pry
